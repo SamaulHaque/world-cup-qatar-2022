@@ -66,7 +66,7 @@ header{
 }
 
 /* blogs and articles syle */
-.main-sec{
+main{
     display: flex;
     justify-content: center;
 }
@@ -75,7 +75,7 @@ header{
     margin-top: 100px;
  
 }
-.blogs-articles{
+.blogs-matches{
     display: grid;
     grid-template-columns: 24% 74.5%;
     grid-column-gap: 15px;
@@ -104,6 +104,7 @@ header{
     row-gap: 20px ;
     text-align: center;
     font-size: 20px;
+    width: 100%;
 
 }
 #other-color{
@@ -111,86 +112,53 @@ header{
     color: #ffffff;
 }
 
-/* article style */
-
-.articles{
+/* matches style */
+.matches{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    width: 100%;
 }
-.article{
+
+.match-cover{
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    padding: 30px 0px;
+
+    text-align: center;
+}
+.match{
+   width: 100%;
+}
+.match-photo {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.match-photo img{
+    width: 80px;
+}
+.match span{
+    position: relative;
+    top: 14px;
+    font-weight: 700;
+    margin: 0px 10px; 
+}
+
+.match-detail{
+    display: flex;
+    justify-content: center;
     flex-direction: column;
-    
 }
-
-.article-photo{
-    margin-bottom: -6px;
-}
-
-.article img{
-    width: 100%;
-
-}
-.article-detail{
-    
-    padding: 15px;
-    border: 1px solid rgb(228, 226, 226);
-    border-top-style: none;
-    border-bottom-left-radius:5px ;
-    border-bottom-right-radius: 5px;
-}
-.article button{
-    margin-bottom: 15px;
-    width: 100px;
-    background-color: #fff;
-    border-radius: 3px;
-    font-weight: 500;
-    border: 1px solid black;
-}
-.article h3{
+.match h2{
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
-.article-info{
-    display: flex;
-}
-.time{
-    margin-right: 40px;
-}
-.time i{
-    margin-right: 10px;
-}
-.comment i{
-    margin-right: 10px;
+.match p{
+    font-size: 12px;
 }
 
-
-/* view all style */
-.btn-container{
-    display: flex;
-    justify-content: center;
-    display: none;
-
-}
-.view-all-btn{
-    width: 300px;
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-}
-.view-all-btn a{
-    text-decoration: none;
-    background-color: #DD0000;
-    padding: 12px 29px;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 400;
-    border-radius: 5px;
-    
-}
 
 /* footer style */
 footer{
@@ -241,7 +209,6 @@ footer{
     color: #B9B9B9;
     font-size: 20px;
 }
-
 /* media queries style */
 
 /* tablate device */
@@ -267,7 +234,7 @@ footer{
     .main{
         width: 90%;
     }
-    .blogs-articles{
+    .blogs-matches{
         display: flex;
         flex-direction: column;
     }
@@ -283,7 +250,7 @@ footer{
         border: 1px solid #E8E8E8;
         padding: 15px 0px;
     }
-    .articles{
+    .matches{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
@@ -331,7 +298,7 @@ footer{
     .main{
         width: 70%;
     }
-    .blogs-articles{
+    .blogs-matches{
         display: flex;
         flex-direction: column;
     }
@@ -340,7 +307,7 @@ footer{
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 25px;
    }
-    .articles{
+    .matches{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 15px;
