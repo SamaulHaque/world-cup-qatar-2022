@@ -19,9 +19,19 @@ header{
     margin-top: 20px;
     width: 1021px;
     height: 500px;
-    background: #161616;
+    background: #250101;
     border-radius: 30px;
+    transition: font-size 3s ease-in-out 6s;
+    transition: color 3s ease 6s;
 }
+.bolder{
+    position: relative;
+}
+.container:hover .bolder{
+    font-size: 45px;
+    color: hsl(83, 92%, 51%);
+}
+
 .banner{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -36,10 +46,12 @@ header{
     width: 100%;
 }
 
+
+
 .banner-detail h1{
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 700;
-    line-height: 60px;
+    
 }
 .banner-detail p{
     font-size: 14px;
@@ -50,11 +62,13 @@ header{
 }
 .banner-detail a{
     text-decoration: none;
-    background-color: #DD0000;
+    background-color: #3f6503;
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
 }
+
+
 .banner-photo{
     width: 100%;
     padding-left: 50px;
@@ -88,7 +102,7 @@ header{
 .blog{
     border-radius: 10px;
     padding: 20px;
-    background-color: #161616;
+    background-color: #250101;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 25px;
@@ -107,7 +121,7 @@ header{
 
 }
 #other-color{
-    background-color: #DD0000;
+    background-color: #3f6503;
     color: #ffffff;
 }
 
@@ -183,7 +197,7 @@ header{
 }
 .view-all-btn a{
     text-decoration: none;
-    background-color: #DD0000;
+    background-color: #3f6503;
     padding: 12px 29px;
     color: #fff;
     font-size: 20px;
@@ -195,7 +209,7 @@ header{
 /* footer style */
 footer{
     margin-top: 100px;
-    background-color: #161616;
+    background-color: #250101;
     border-style: none;
     padding: 100px 0px;
     display: flex;
@@ -248,13 +262,15 @@ footer{
 @media screen and (max-width: 992px){
     .container{
         width: 90%;
+    
     }
    
     .banner-photo{
         width: 100%;
     }
     .banner-photo img{
-        width: 70%;
+    
+        width: 75%;
     }
     .banner-detail h1{
         font-size: 40px;
@@ -264,6 +280,14 @@ footer{
    .title{
     white-space: nowrap;
    }
+   .description{
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+   .container:hover .bolder{
+    font-size: 35px;}
     .main{
         width: 90%;
     }
@@ -314,7 +338,13 @@ footer{
     .title{
         white-space: nowrap;
        }
-    
+
+       .description{
+        width: 250px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     .banner-detail h1{
         font-size: 30px;
         font-weight: 600;
@@ -324,10 +354,11 @@ footer{
         width: 100%;
     }
     .banner-photo img{
-        width: 70%;
+        width: 50%;
     }
 
-   
+    .container:hover .bolder{
+        font-size: 25px;}
     .main{
         width: 70%;
     }
